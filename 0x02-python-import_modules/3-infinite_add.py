@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    from sys import argv
-    s = 0
-    for i in argv[1:]:
-        s = s + int(i)
-    print("{:d}".format(s))
+    '''A function that sums all the command line argument added to it'''
+    import sys
+
+    argc = len(sys.argv)
+    sum = 0
+    for m in range(1, argc):
+        sum = sum + int(sys.argv[m])
+    print("{:d}".format(sum))
